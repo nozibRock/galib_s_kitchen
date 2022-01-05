@@ -46,6 +46,103 @@
 }
 /* Nav Styles end */
 
+/* Footer Styles start */
+footer {
+  background: var(--lightGreen-1);
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+.footer_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.footer_logo {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.footer_desc {
+  font-size: 1.4rem;
+  color: var(--black-2);
+  margin-bottom: 2rem;
+}
+.footer_socials_title {
+  font-size: 1.8rem;
+  color: var(--black-1);
+  margin-bottom: 1rem;
+}
+.footer_socials li {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.footer_socials a {
+  padding: 0.5rem 0.8rem;
+  color: var(--black-2);
+  background-color: var(--white-1);
+  border: 1px solid var(--green-2);
+  border-radius: 8px;
+}
+
+.footer_socials #facebook:hover {
+  background: var(--facebook-background);
+  color: var(--white-1);
+}
+.footer_socials #instagram:hover {
+  background: var(--cerise-1);
+  background: var(--instagram-background);
+  color: var(--white-1);
+}
+.footer_socials #twitter:hover {
+  background-color: var(--twitter-background);
+  color: var(--white-1);
+}
+.footer_socials i {
+  font-size: 20px;
+}
+.footer_text_title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--black-1);
+  font-weight: 600;
+}
+.footer_text a {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--black-2);
+  font-family: Raleway;
+  font-weight: 500;
+  line-height: 1.4em;
+}
+.footer_text a:hover {
+  color: var(--green-1);
+}
+#copyright {
+  padding: 1rem 0;
+}
+.copyright_text {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.emoji {
+  vertical-align: middle;
+}
+.copyright_text a {
+  border-bottom: 1px solid var(--green-1);
+  padding-bottom: 0.25em;
+}
+.copyright_text a:hover {
+  /* color: var(--green-1); */
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 40%;
+  border-bottom: 0;
+  padding-bottom: 0.3em;
+}
+
+/* Footer Styles end */
+
 /* media query start */
 @media only screen and (max-width: 767px) {
   /* Global button styles start */
@@ -115,5 +212,36 @@
     display: block;
   }
   /* Nav Styles end */
+
+  /* Footer Styles start */
+  footer {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+  .footer_wrapper {
+    flex-direction: column;
+  }
+  .footer_desc {
+    max-width: 300px;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+  }
+  .footer_socials_title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer_text_title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .footer_text a {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .copyright_text {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+  /* Footer Styles end */
 }
 /* media query end */
