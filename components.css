@@ -49,6 +49,67 @@
 }
 /* Nav Styles end */
 
+/* Store info section styles start */
+.storeInfo_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.storeInfo_item {
+  background-color: var(--lightGreen-1);
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 12px;
+  width: 150px;
+}
+.storeInfo_icon {
+  width: 30px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.storeInfo_title {
+  font-size: 1.4rem;
+  font-family: Poppins;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--black-1);
+}
+.storeInfo_title a {
+  color: var(--black-1);
+}
+.storeInfo_title a:hover {
+  color: var(--green-1);
+}
+.storeInfo_text {
+  font-size: 1.4rem;
+  font-family: Raleway;
+  color: var(--black-2);
+}
+@media only screen and (min-width: 768px) {
+  .storeInfo_wrapper {
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .storeInfo_item {
+    min-width: 200px;
+    padding: 40px 0;
+  }
+  .storeInfo_icon {
+    width: 47px;
+    margin-bottom: 2.5rem;
+  }
+  .storeInfo_title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .storeInfo_text {
+    font-size: 1.6rem;
+  }
+}
+/* Store info section styles end */
+
 /* Footer Styles start */
 footer {
   background: var(--lightGreen-1);
