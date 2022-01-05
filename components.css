@@ -12,9 +12,12 @@
   background: var(--green-1);
   transition: all 0.5s ease-in-out;
 }
-.btn:hover,
+
 .primary-btn:hover {
   background: var(--green-2);
+  color: var(--black-1);
+}
+.btn:hover {
   color: var(--black-1);
 }
 /* Global button styles end */
@@ -123,6 +126,9 @@ footer {
 .copyright_text {
   font-size: 1.4rem;
   text-align: center;
+}
+.copyright_text img {
+  width: 1.7%;
 }
 .emoji {
   vertical-align: middle;
