@@ -1,0 +1,119 @@
+/* Global button styles start */
+.btn {
+  color: var(--green-1);
+  font-family: Poppins;
+  font-weight: 500;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  padding: 1.2rem 2rem;
+}
+.primary-btn {
+  color: var(--white-1);
+  background: var(--green-1);
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover,
+.primary-btn:hover {
+  background: var(--green-2);
+  color: var(--black-1);
+}
+/* Global button styles end */
+/* Nav Styles start */
+.nav {
+  padding: 2rem 0;
+}
+.nav_icon,
+.nav_close,
+.nav_bgOverlay {
+  display: none;
+}
+.nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_list li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+.nav_list .nav_link {
+  font-size: 1.8rem;
+  font-family: Poppins;
+  color: var(--black-2);
+  padding: 0.5rem;
+}
+.nav_list li:hover .nav_link {
+  color: var(--green-1);
+}
+/* Nav Styles end */
+
+/* media query start */
+@media only screen and (max-width: 767px) {
+  /* Global button styles start */
+  .btn {
+    padding: 1.3rem 2rem;
+    font-size: 2rem;
+  }
+  /* Global button styles end */
+  /* Nav Styles start */
+  .nav {
+    position: relative;
+  }
+  .nav_icon {
+    display: block;
+  }
+  .nav_icon i,
+  .nav_close i {
+    pointer-events: none;
+    font-size: 30px;
+  }
+  .nav_close {
+    display: block;
+    position: absolute;
+    color: var(--black-1);
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+  }
+  .nav_list {
+    z-index: 1000;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100vh;
+    width: 60%;
+    background: var(--lightGreen-1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    transform: translate(0%);
+    overflow: hidden;
+    transition: 0.3s ease-in transform;
+  }
+  .nav_list.show {
+    transform: translate(-100%);
+  }
+  .nav_list li {
+    display: block;
+    text-align: right;
+    margin-bottom: 2rem;
+  }
+  .nav_list a {
+    font-size: 1.6rem;
+  }
+  .nav_bgOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    height: 100vh;
+    width: 100%;
+    background: rgba(18, 24, 14, 0.808);
+    display: none;
+  }
+  .nav_bgOverlay.active {
+    display: block;
+  }
+  /* Nav Styles end */
+}
+/* media query end */
